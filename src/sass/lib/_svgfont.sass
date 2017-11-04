@@ -1,0 +1,47 @@
+@font-face
+	font-family: "svgfont"
+	src: url('fonts/svgfont.eot')
+	src: url('fonts/svgfont.eot?#iefix') format('eot'), url('fonts/svgfont.woff') format('woff'), url('fonts/svgfont.woff2') format('woff2'), url('fonts/svgfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+$icon-arrow_down: "\EA01"
+$icon-close: "\EA02"
+$icon-facebook: "\EA03"
+$icon-in: "\EA04"
+$icon-mail: "\EA05"
+$icon-slack: "\EA06"
+$icon-telegram: "\EA07"
+$icon-tw: "\EA08"
+
+
+%icon
+	font-family: "svgfont"
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon, [class^="icon-"], [class*=" icon-"]
+	@extend %icon
+	display: inline-block
+
+.icon-arrow_down:before
+	content: $icon-arrow_down
+.icon-close:before
+	content: $icon-close
+.icon-facebook:before
+	content: $icon-facebook
+.icon-in:before
+	content: $icon-in
+.icon-mail:before
+	content: $icon-mail
+.icon-slack:before
+	content: $icon-slack
+.icon-telegram:before
+	content: $icon-telegram
+.icon-tw:before
+	content: $icon-tw

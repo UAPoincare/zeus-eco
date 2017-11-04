@@ -1,0 +1,186 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+// 			+s(codedby) 
+// ## gradient example
+//     	+g(#232323, #5c5c5c);
+//	   horizontal
+//     	+gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +r(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts
+// Save fonts to /src/fonts
+// +font(book, cytiapro-black-webfont)
+// and create mixin
+// =book
+// 	font-family: "book", Arial, sans-serif
+
+html, 
+body
+	height: 100%
+	min-height: 100%
+
+body
+	+mt
+	font-size: 18px
+	line-height: 1.4
+	color: #000
+	&.popup-open
+		overflow: hidden
+
+.out
+	position: relative
+	&.jap
+		h2, h3, h4, p
+			font-weight: normal!important
+		.main-logo
+			max-width: 700px
+		.main-logo__inner
+			justify-content: flex-end
+	&.kor
+		h2, h3, h4, p
+			font-weight: normal!important
+		.main-logo
+			max-width: 600px
+
+// common blocks
+
+.row
+	position: relative
+	max-width: 1080px
+	margin: 0 auto
+	padding: 0 10px
+	&_center
+		text-align: center
+
+.title-h2
+	margin-bottom: 5px
+	text-transform: uppercase
+	color: #000
+	font-size: 30px
+	text-align: center
+	&_white
+		color: #FFF 
+
+.title-h3
+	font-weight: normal
+	font-size: 18px 
+	text-align: center
+	&_white
+		color: #FFF 
+
+.title-h4
+	margin-top: 30px 
+	margin-bottom: 20px
+	&_upper
+		text-transform: uppercase 
+
+.btn-wrap
+	text-align: center
+	&_pad
+		padding: 20px 0
+	&_abs
+		position: absolute
+		top: -63px		
+		left: 0
+		right: 0
+
+b
+	font-weight: bold 
+
+.btn
+	height: 60px
+	padding: 8px 55px 9px
+	text-align: center
+	color: #fff
+	font-size: 26px
+	+mm
+	border-radius: 30px
+	text-transform: uppercase
+	text-decoration: none
+	background-clip: padding-box
+	transition: background-color 0.3s
+	background-color: #FAA620 
+	&_green
+		background-color: #29b948
+		&:hover
+			background-color: darken(#29b948, 10%)
+	&_border
+		border: 7px solid rgba(#000, 0.5)
+	&_mod
+		padding: 13px 75px 13px
+		color: #000 
+	&_mid
+		height: 40px 
+		padding: 5px 15px 
+		font-size: 24px 
+	&_big
+		font-size: 24px
+		height: 75px
+		padding: 0 75px
+		border-radius: 40px
+
+.text
+	margin-bottom: 20px 
+	&_center
+		text-align: center
+	&_orange
+		color: #faa620 
+	&_white
+		color: #FFF 
+	&_bold
+		font-size: 24px 
+		+mm
+	&_mg
+		margin-bottom: 50px 
+	&_mg_bg
+		margin: 30px 0
+	&_divider
+		position: relative
+		margin-bottom: 40px 
+		&:after
+			content: "" 
+			position: absolute
+			left: 50%
+			top: 100% 
+			margin-top: 20px 
+			transform: translateX(-50%)
+			width: 200px
+			height: 3px
+			background-color: #2ab747 
+
+.scroll-top
+	position: fixed
+	bottom: 25px
+	right: 30px
+	width: 50px
+	height: 50px
+	background: none
+	font-family: Arial, Helvetica, sans-serif
+	font-size: 11px
+	color: #fff
+	transition: background 0.3s
+	display: none
+	box-shadow: 0 0 5px rgba(#000, 0.5) 
+	border-radius: 50%
+	+r(1024)
+		right: 20px
+	&:before
+		content: "" 
+		display: inline-block
+		+s('arrowUp')
+	&.is-visible
+		display: block
