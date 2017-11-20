@@ -1,7 +1,7 @@
 // # SHORT HOWTO
 // ## Sprites
 //     .whatever
-// 			+s(codedby) 
+// 			+s(codedby)
 // ## gradient example
 //     	+g(#232323, #5c5c5c);
 //	   horizontal
@@ -28,7 +28,7 @@
 // =book
 // 	font-family: "book", Arial, sans-serif
 
-html, 
+html,
 body
 	height: 100%
 	min-height: 100%
@@ -73,20 +73,20 @@ body
 	font-size: 30px
 	text-align: center
 	&_white
-		color: #FFF 
+		color: #FFF
 
 .title-h3
 	font-weight: normal
-	font-size: 18px 
+	font-size: 18px
 	text-align: center
 	&_white
-		color: #FFF 
+		color: #FFF
 
 .title-h4
-	margin-top: 30px 
+	margin-top: 30px
 	margin-bottom: 20px
 	&_upper
-		text-transform: uppercase 
+		text-transform: uppercase
 
 .btn-wrap
 	text-align: center
@@ -94,12 +94,12 @@ body
 		padding: 20px 0
 	&_abs
 		position: absolute
-		top: -63px		
+		top: -63px
 		left: 0
 		right: 0
 
 b
-	font-weight: bold 
+	font-weight: bold
 
 .btn
 	height: 60px
@@ -113,7 +113,7 @@ b
 	text-decoration: none
 	background-clip: padding-box
 	transition: background-color 0.3s
-	background-color: #FAA620 
+	background-color: #FAA620
 	&_green
 		background-color: #29b948
 		&:hover
@@ -122,11 +122,11 @@ b
 		border: 7px solid rgba(#000, 0.5)
 	&_mod
 		padding: 13px 75px 13px
-		color: #000 
+		color: #000
 	&_mid
-		height: 40px 
-		padding: 5px 15px 
-		font-size: 24px 
+		height: 40px
+		padding: 5px 15px
+		font-size: 24px
 	&_big
 		font-size: 24px
 		height: 75px
@@ -134,33 +134,33 @@ b
 		border-radius: 40px
 
 .text
-	margin-bottom: 20px 
+	margin-bottom: 20px
 	&_center
 		text-align: center
 	&_orange
-		color: #faa620 
+		color: #faa620
 	&_white
-		color: #FFF 
+		color: #FFF
 	&_bold
-		font-size: 24px 
+		font-size: 24px
 		+mm
 	&_mg
-		margin-bottom: 50px 
+		margin-bottom: 50px
 	&_mg_bg
 		margin: 30px 0
 	&_divider
 		position: relative
-		margin-bottom: 40px 
+		margin-bottom: 40px
 		&:after
-			content: "" 
+			content: ""
 			position: absolute
 			left: 50%
-			top: 100% 
-			margin-top: 20px 
+			top: 100%
+			margin-top: 20px
 			transform: translateX(-50%)
 			width: 200px
 			height: 3px
-			background-color: #2ab747 
+			background-color: #2ab747
 
 .scroll-top
 	position: fixed
@@ -174,13 +174,37 @@ b
 	color: #fff
 	transition: background 0.3s
 	display: none
-	box-shadow: 0 0 5px rgba(#000, 0.5) 
+	box-shadow: 0 0 5px rgba(#000, 0.5)
 	border-radius: 50%
 	+r(1024)
 		right: 20px
 	&:before
-		content: "" 
+		content: ""
 		display: inline-block
 		+s('arrowUp')
 	&.is-visible
 		display: block
+
+.send-mail-form
+	margin-top: 50px
+
+.send-mail-form
+	label
+		color: #fff
+		margin-bottom: 20px
+	.email-text
+		width: 250px
+		height: 40px
+		text-indent: 15px
+		font-size: 14px
+		padding-right: 10px
+		border: none
+		box-shadow: none
+	.email-send
+		height: 40px
+		width: 120px
+		margin-left: -5px
+		font-size: 14px
+		background-color: #FAA620
+		font-weight: bold
+		letter-spacing: 1px
