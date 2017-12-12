@@ -202,6 +202,8 @@ b { font-weight: bold; }
 .nav__link_sm { max-width: 190px; font-size: 17px; padding: 0 11px; }
 .nav__link span { vertical-align: middle; display: inline-block; }
 
+.fa { font-size: 50px; vertical-align: 3px; -webkit-transform: rotate(20deg); -ms-transform: rotate(20deg); transform: rotate(20deg); }
+
 .params { font-size: 0; margin-right: -20px; text-align: center; }
 
 .circle-items_4 { max-width: 860px; margin: 0 auto; }
@@ -334,6 +336,9 @@ b { font-weight: bold; }
 .popup button { margin-top: 30px; min-width: 226px; padding: 10px 20px; background-color: #093; border: 1px solid rgba(1, 2, 2, 0.07); box-shadow: 5.5px 9.5px 20px rgba(20, 20, 21, 0.08); font-size: 27px; text-transform: uppercase; color: #FFF; border-radius: 24px; cursor: pointer; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+@media only screen and (max-width: 1074px){
+ .nav{ margin-right: 80px; }
+ .nav__link{ letter-spacing: -0.5px; font-size: 13px; } }
 @media only screen and (max-width: 1024px){
  .scroll-top{ right: 20px; } }
 @media only screen and (max-width: 1023px){
